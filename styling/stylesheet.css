@@ -1,0 +1,27 @@
+html {
+  font-family: 'Press Start 2P', cursive;
+  color: brown;
+}
+
+#body {
+  background-color: tan;
+}
+
+#h1 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#canvas {
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.story {
+  margin: 15px auto;
+  display: flex;
+  width: 400;
+}
