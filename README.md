@@ -59,4 +59,4 @@ This game is a continuing work in progress.  Future features to implement includ
 
 * Global leaderboard
 * "Flash flood" obstacle requiring vertical bucket movement
-* Adjustment of
+* Further tweaks to adjust raindrop fall speed for better playability: since fallspeed increases 20% each time, the game goes from easy to unplayable over a relatively short time. Past a certain fallspeed, reducing the rate of speed increase would improve the overall experience.
