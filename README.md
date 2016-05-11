@@ -12,7 +12,7 @@ Try not to die.
 
 Created using the following technologies:
 
-* Javascript, using webpack to
+* Javascript, using webpack to manage file dependencies
 * jQuery, hosted by Google
 * CSS and Google fonts
 * Images and sound hosted on Cloudinary
@@ -36,6 +36,10 @@ Once the raindrop reaches the bottom of the screen, it changes its instance vari
 Audio was added via `<audio>`tags in the `index.html` header.  The mute button uses jQuery to identify all audio objects on the page and set their volume to either 0% (if playing) or 100% (if muted):
 ```html
 <script>
+<audio class="sound" id="music" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462978547/js_capstone/Venus.wav"></audio>
+<audio class="sound" id="drip" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462979158/js_capstone/water-droplet.wav"></audio>
+<audio class="sound" id="gameOverSound" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462979614/js_capstone/game_over.wav"></audio>
+
 $('#mute').on('click', function(){
   sounds = $('.sound')
   sounds.each(function(){
