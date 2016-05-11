@@ -21,9 +21,9 @@ html {
 }
 
 .story {
-  margin: 15px auto;
   display: flex;
-  width: 400;
+  margin: 15px auto;
+  width: 400px;
 }
 
 #gh-link {
@@ -32,4 +32,16 @@ html {
   justify-content: center;
   color: yellow;
   text-decoration: none;
+}
+
+#mute {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  justify-content: flex-end;
+  color: yellow;
+}
+
+#mute:hover {
+  cursor: pointer;
 }

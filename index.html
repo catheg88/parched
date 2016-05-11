@@ -8,15 +8,34 @@
     <img id="bucket" src="http://res.cloudinary.com/dfthfd7v8/image/upload/v1462839367/js_capstone/bucket.png" alt="bucket" style="display:none"/>
     <img id="game_over" src="http://res.cloudinary.com/dfthfd7v8/image/upload/v1462906658/js_capstone/game_over.png" alt="game_over" style="display:none"/>
     <script type="application/javascript" src="vendor/keymaster.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <audio class="sound" id="music" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462978547/js_capstone/Venus.wav"></audio>
+    <audio class="sound" id="drip" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462979158/js_capstone/water-droplet.wav"></audio>
+    <audio class="sound" id="gameOverSound" src="http://res.cloudinary.com/dfthfd7v8/video/upload/v1462979614/js_capstone/game_over.wav"></audio>
   </head>
   <body id="body">
     <h1 id="h1">PARCHED!!!</h1>
     <canvas id="canvas"></canvas>
+    <div id="mute" >mute</div>
+    <br />
     <p class="story">By the year 2021 Earth has been ravaged by massive global drought.  Make the most of what water is left - even one drop could mean the difference between life and death...</p>
     <br />
     <a id="gh-link" href="https://github.com/catheg88/parched">catheg88's GitHub</a>
+
+    <script>
+    $('#mute').on('click', function(){
+      sounds = $('.sound')
+      sounds.each(function(){
+        if(this.volume === 0) {
+          this.volume = 1;
+        } else {
+          this.volume = 0;
+        }
+      });
+    });
+    </script>
 
   </body>
 </html>
