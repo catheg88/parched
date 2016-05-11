@@ -25,3 +25,11 @@ html {
   display: flex;
   width: 400;
 }
+
+#gh-link {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: yellow;
+  text-decoration: none;
+}
