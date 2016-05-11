@@ -19,7 +19,22 @@ Created using the following technologies:
 
 ##Technical implementation
 
-* The raindrops have speeds set in pixels per frame.  Each time the 
+* The raindrops have speeds set in pixels per frame.  There is only one raindrop in play at any given time.  The raindrop is created with an initial speed of 2px/frame, and a starting position:
+"""
+var Rain = function (game) {
+  this.getStartPos();
+  this.fallSpeed = 2;
+  this.game = game;
+  this.dropped = false;
+};
+"""
+Every frame, the raindrop adjusts its position:
+`    this.pos[1] += this.fallSpeed;``
+Each time the raindrop falls, it increases its speed by 20%:
+`    this.fallSpeed += .2`
+Once the raindrop reaches the bottom of the screen, it changes its instance variable `dropped` from false to true, and checks whether it was caught.  If it was, it is assigned a new starting position:
+`      game.rain.getStartPos();`
+
 
 ##Features for further development
 
