@@ -14,6 +14,7 @@ Created using the following technologies:
 
 * Javascript, using webpack to manage file dependencies
 * jQuery, hosted by Google
+* Keymaster, for key bindings
 * CSS and Google fonts
 * Images and sound hosted on Cloudinary
 
