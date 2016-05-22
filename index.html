@@ -18,24 +18,29 @@
   <body id="body">
     <h1 id="h1">PARCHED!!!</h1>
     <canvas id="canvas"></canvas>
-    <div id="mute" >mute</div>
+    <div id="buttonRow">
+      <div id="start">START!</div>
+      <div id="mute">mute</div>
+    </div>
     <br />
     <p class="story">By the year 2021 Earth has been ravaged by massive global drought.  Make the most of what water is left - even one drop could mean the difference between life and death...</p>
     <br />
     <a id="gh-link" href="https://github.com/catheg88/parched">catheg88's GitHub</a>
 
     <script>
-    $('#mute').on('click', function(){
-      sounds = $('.sound')
-      sounds.each(function(){
-        if(this.volume === 0) {
-          this.volume = 1;
-        } else {
-          this.volume = 0;
-        }
+      var $mute = $('#mute');
+      $mute.on('click', function(){
+        sounds = $('.sound');
+        sounds.each(function(){
+          if(this.volume === 0) {
+            this.volume = 1;
+            $mute.text("mute");
+          } else {
+            this.volume = 0;
+            $mute.text("unmute");
+          }
+        });
       });
-    });
     </script>
-
   </body>
 </html>

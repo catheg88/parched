@@ -34,14 +34,32 @@ html {
   text-decoration: none;
 }
 
+#buttonRow {
+  display: flex;
+  width: 400px;
+  margin: 3px auto;
+}
+
 #mute {
   display: flex;
   margin: 0 auto;
-  width: 400px;
+  width: 100px;
   justify-content: flex-end;
   color: yellow;
 }
 
 #mute:hover {
+  cursor: pointer;
+}
+
+#start {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  justify-content: flex-start;
+  color: yellow;
+}
+
+#start:hover {
   cursor: pointer;
 }
